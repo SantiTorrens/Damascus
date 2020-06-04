@@ -12,7 +12,8 @@ function Main() {
   return (
     <div className="Main-container">
       <Tipos />
-    
+      <Historia />
+      <Manufactura />
       <Shop />
   
     </div>
