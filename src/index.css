@@ -1,13 +1,31 @@
-body {
+*{
+  box-sizing: border-box;
+}
+body,html {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+body::-webkit-scrollbar-track{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #2121C3;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* 
+Basketweave https://i.ebayimg.com/images/g/Px8AAOSwHBda0mzY/s-l400.jpg 
+Random https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSILHB8Z4HpNDZoDsLSzM4eSknUdIqG2zMJDnphgnnn4hQH7zcq&usqp=CAU
+Ladder https://cdn.shopify.com/s/files/1/0017/4342/1493/products/1_grande.jpeg?v=1560939400
+Raindrop https://cdn.shopify.com/s/files/1/0187/3353/1236/products/474438-42c03a6796f44c3dbdd7fea4dc3bdb3a_1024x1024_2x_69d28812-a819-469d-af04-9f385844d480_grande.jpg?v=1571720944
+*/
