@@ -1,32 +1,26 @@
 import React, { Component } from "react";
 
 class Ingresar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      log: false,
-    };
-    this.clickHandler = this.clickHandler.bind(this);
-  }
-
+  state = {
+    log: false,
+  };
   clickHandler = () => {
-   const doesLog = this.state.log;
-   this.setState({log: !doesLog})
-
-  
+    const doesLog = this.state.log;
+    this.setState({ log: !doesLog });
   };
 
   render() {
     let login = "Login";
-    if(this.state.log){
-      login = "LogOut"
+    if (this.state.log) {
+      login = "LogOut";
     }
     return (
       <div className="Login">
-        <a onClick={this.clickHandler} href="#login">{login}</a>
+        <a onClick={this.clickHandler} href="#login">
+          {login}
+        </a>
       </div>
-    )
+    );
   }
 }
 

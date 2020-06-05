@@ -2,7 +2,7 @@ import React from "react";
 
 function Historia() {
   return (
-    <div className="Historia-container">
+    <div id="Historia-container">
       <div className="Historia-txt">
         <h1 className="Historia-title">El origen del término «Damasco»</h1>
         <p className="Historia-p">
@@ -26,3 +26,5 @@ function Historia() {
 }
 
 export default Historia;
+
+
