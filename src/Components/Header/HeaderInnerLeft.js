@@ -10,7 +10,7 @@ function HeaderInnerLeft() {
             className="title"
             title="go to Damascus"
           >
-            DAMASCUS
+            Damasco
           </a>
         </span>
       </div>
