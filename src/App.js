@@ -6,7 +6,6 @@ import "./Components/Styles/header.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import SideDrawer from "./Components/Header/SideDrawer.js/SideDrawer";
-import BackDrop from "./Components/BackDrop/BackDrop";
 
 class App extends Component {
   state = {
@@ -22,15 +21,10 @@ class App extends Component {
   };
 
   render() {
-    let backDrop;
-    if (this.state.sideDrawerOpen) {
-      backDrop = <BackDrop click={this.backDropClickHandler} />;
-    }
     return (
       <div style={{ height: "100%", widht: "100%" }} className="App">
         <SideDrawer show={this.state.sideDrawerOpen} click={this.backDropClickHandler}/>
-        {backDrop}
-        <Header drawerClickHandler={this.drawerToggleClickHandler}  />
+        <Header click={this.backDropClickHandler} drawerClickHandler={this.drawerToggleClickHandler}  />
         <Main />
       </div>
     );

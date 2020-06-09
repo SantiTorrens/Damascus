@@ -2,21 +2,23 @@ import React, { Component } from "react";
 
 class Ingresar extends Component {
   state = {
-    log: false,
+    logginOpen: false,
   };
-  clickHandler = () => {
-    const doesLog = this.state.log;
-    this.setState({ log: !doesLog });
+
+  loginToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return { logginOpen: !prevState.logginOpen };
+    });
   };
 
   render() {
     let login = "Login";
-    if (this.state.log) {
+    if (this.state.logginOpen) {
       login = "LogOut";
     }
     return (
       <div className="Login">
-        <a onClick={this.clickHandler} href="#login">
+        <a onClick={this.loginToggleClickHandler} href="#login">
           {login}
         </a>
       </div>

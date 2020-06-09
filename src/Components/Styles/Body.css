@@ -323,3 +323,13 @@ p {
   transform: translatex(4px);
   box-shadow: 2.5px 1px #232326;
 }
+
+@media (max-width: 769px) {
+  .Video-container {
+    width: 50%;
+  }
+  .video {
+    width: 150px;
+    height: 75px;
+  }
+}
