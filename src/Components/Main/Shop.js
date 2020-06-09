@@ -16,13 +16,13 @@ class Shop extends Component {
           value: "",
         },
         text: {
-          value: "Ingrese su mensaje",
+          value: "Ingrese su mensaje...",
         },
       },
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClick  = this.handleClick.bind(this);  
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleChange = (event) => {
@@ -52,8 +52,11 @@ class Shop extends Component {
     );
     event.preventDefault();
   };
+
   handleClick = () => {
-    this.setState({});
+    this.setState((prevState) => {
+      return {};
+    });
   };
 
   render() {
