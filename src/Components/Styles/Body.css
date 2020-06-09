@@ -324,7 +324,7 @@ p {
   box-shadow: 2.5px 1px #232326;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 986px) {
   .Video-container {
     width: 50%;
   }
