@@ -15,7 +15,6 @@ function Main() {
       <Historia />
       <Manufactura />
       <Shop />
-  
     </div>
   );
 }
