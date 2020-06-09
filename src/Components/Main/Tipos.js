@@ -70,7 +70,7 @@ export class Tipos extends Component {
       types = (
         <div className="Tipos-grid">
           {this.state.types.map((type) => {
-            return <Tipos2 name={type.name} info={type.info} img={type.img} imgbtn={type.imgbtn} />;
+            return <Tipos2 key={type.id} name={type.name} info={type.info} img={type.img} imgbtn={type.imgbtn} />;
           })}
         </div>
       );
