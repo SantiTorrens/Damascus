@@ -17,10 +17,21 @@
 .footer{
     color: rgba(12, 84, 202, 1);
     height: inherit;
+    width: 30%;
     margin: 0;
     padding: 5px 0;
     text-align: center;
     flex-direction: row;
     align-content: center;
     font-family: inherit;
+}
+
+@media (max-width: 767px) {
+    .footer{
+        font-size: .5rem;
+        
+    }
+    .Footer-container{
+        width: 100%;
+    }
 }

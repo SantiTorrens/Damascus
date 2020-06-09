@@ -26,6 +26,9 @@
   text-decoration: none;
   font-size: 2.5rem;
 }
+.toolbar_logo a:hover{
+  color: rgba(12, 84, 202, 1);
+}
 .toolbar_navigation-items ul {
   list-style: none;
   margin: 0;
@@ -58,6 +61,10 @@
   text-decoration: none;
   text-decoration: underline;
   color: rgba(255, 255, 255, 1);
+}
+
+.Login a:hover{
+  color: rgba(12, 84, 202, 1);
 }
 
 @media (max-width: 768px) {
