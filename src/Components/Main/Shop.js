@@ -15,10 +15,14 @@ class Shop extends Component {
         email: {
           value: "",
         },
+        text: {
+          value: "Ingrese su mensaje",
+        },
       },
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleClick  = this.handleClick.bind(this);  
   }
 
   handleChange = (event) => {
@@ -47,6 +51,9 @@ class Shop extends Component {
         " "
     );
     event.preventDefault();
+  };
+  handleClick = () => {
+    this.setState({});
   };
 
   render() {
@@ -85,7 +92,13 @@ class Shop extends Component {
                 />
               </label>
               <label className="textarea-label">
-                <textarea />
+                <textarea
+                  type="text"
+                  name="text"
+                  value={this.state.formControls.text.value}
+                  onChange={this.handleChange}
+                  onClick={this.handleClick}
+                />
               </label>
             </div>
 

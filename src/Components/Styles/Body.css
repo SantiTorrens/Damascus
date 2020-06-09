@@ -127,6 +127,7 @@
   box-shadow: 2.5px 1px #232326;
 }
 #Manufactura {
+  width: 100%;
   height: 880px;
   background-color: #262626;
   display: block;
@@ -200,9 +201,9 @@ h2 {
   text-align: center;
 }
 .form {
-  width: 50%;
+  width: 80%;
   height: 500px;
-  margin-left: 25%;
+  margin-left: 10%;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
@@ -239,8 +240,10 @@ input {
   width: 100%;
   height: 25px;
   float: right;
+  border-radius: 8px;
 }
 .textarea-label {
+  
   width: 70%;
   height: 90px;
   margin-top: 10px;
@@ -250,10 +253,11 @@ input {
   align-items: center;
 }
 textarea {
+  border-radius: 8px;
   margin: 10px;
   width: 100%;
   height: inherit;
-  padding: 10px;
+  padding: 0;
 }
 .submit {
   float: right;
@@ -324,12 +328,31 @@ p {
   box-shadow: 2.5px 1px #232326;
 }
 
-@media (max-width: 986px) {
-  .Video-container {
-    width: 50%;
+@media (max-width: 767px) {
+  .body {
+    max-width: 100%;
+  }
+  .shop{
+    width: 100%;
+    height: 500px;
+  }
+  .Video-container{
+    width: 80%;
+    margin-left: 10%;
+    height: 20%;
   }
   .video {
-    width: 150px;
-    height: 75px;
+    width: 80%;
+    height: 60%;
   }
+  .form{
+    width: 80%;
+    height: 40%;
+    margin-left: 10%;
+  }
+  .form-container{
+    margin-left: 10%;
+    width: 90%;
+      }
+
 }
